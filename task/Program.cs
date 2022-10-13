@@ -7,15 +7,13 @@ Console.Write($"{(i == 0? array1[i]: ", " + array1[i])} ");
 }
 Console.Write(" ---> ");
 string[] newArray = new string[array1.Length];  //array2.Length
-   for (int i = 0; i < array1.Length; i++)
-   {
-    if (array1[i].Length <= 3)
-   {
-    var temp =  array1[i];
-    temp = newArray[i];
-    newArray[i] = array1[i];
-   Console.Write($"{(i == 0? newArray[i]: ", " + newArray[i])}");
-   }
-   }
-
-                                                                                                                                                                                     
+   for (int j = 0; j < array1.Length; j++)
+{
+    if (array1[j].Length <= 3)
+{
+var temp =  array1[j];
+temp = newArray[j];
+newArray[j] = array1[j];
+Console.Write($"{(j == 0? newArray[j]: ", " + newArray[j])}");
+}
+}                                                                                                                                                                             
